@@ -47,6 +47,7 @@ body{
 
 /* Navbar */
 .Navbar{
+    display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 20px auto;
@@ -99,6 +100,7 @@ body{
 
 /* Banner Styles */
 .banner{
+    display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 50px;
@@ -122,6 +124,30 @@ body{
 }
 .banner-btn{
     background: var(--Black);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: color 0.3s ease-in-out;
+}
+.banner-btn::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: radial-gradient(circle, var(--Purple), var(--Paste-green));
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.6s ease, height 0.6s ease;
+    z-index: -1;
+}
+.banner-btn:hover {
+    color: #000;
+}
+.btn:hover::after {
+    width: 300px;
+    height: 300px;
 }
 .banner-txt{
     color: var(--Black, #111);
@@ -131,10 +157,19 @@ body{
 .banner-image{
     max-width: 100%;
 }
+.banner-image:hover{
+    /* scale: 101%; */
+    transform: scale(1.01);
+}
 
 /* Curriculum Styles */
+.curriculum{
+    padding-top: 60px;
+    padding-bottom: 80px;
+    background-image: url(../Images/bg.png);
+}
 .curriculum-title{
-    margin-top: 60px;
+    /* margin-top: 60px; */
     margin-bottom: 80px;
 }
 .card-container{
@@ -146,13 +181,31 @@ body{
 }
 .edu-card{
     border-radius: 18.864px;
-    border: 0.943px solid #DEF5FF;
-    background: linear-gradient(180deg, #DEF5FF 0%, rgba(255, 255, 255, 0.00) 40%), #FFF;
     box-shadow: 0px 0px 28.296px 0.943px rgba(0, 0, 0, 0.05) inset;
     padding: 40px;
     justify-items: center;
-    height: 476px;
+    height: 481px;
     /* max-width: 367px; */
+}
+.edu-card:hover {
+    transform: scale(1.01);
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.10);
+    background-color: rgba(255, 255, 255, 0.95);
+}
+.blue-card{
+    border: 0.943px solid #DEF5FF;
+    background: linear-gradient(180deg, #DEF5FF 0%, rgba(255, 255, 255, 0.00) 40%), #FFF;
+}
+.yellow-card{
+    border: 0.943px solid #FFF4DC;
+    background: linear-gradient(180deg, #FFF4DC 0%, rgba(255, 255, 255, 0.00) 40%), #FFF;
+}
+.purple-card{
+    border: 0.943px solid #F2E8FF;
+    background: linear-gradient(180deg, #EEE1FF 0%, rgba(255, 255, 255, 0.00) 40%), #FFF;
+}
+.card-image{
+    max-width: 100%;
 }
 .card-title{
     color: #202020;
@@ -179,10 +232,32 @@ body{
     font-size: 1rem;
     font-style: normal;
     font-weight: 700;
-    line-height: 28.296px; /* 187.5% */
+    line-height: 28.296px;
     border: none;
-    background-color: white;
     cursor: pointer;
+    background: none;
+}
+.blue-btn{
+    color: #64C8FF;
+}
+.yellow-btn{
+    color: #F0AA00;
+}
+.purple-btn{
+    color: #8700FF;
+}
+
+.direction{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 60px;
+    /* margin-bottom: 80px; */
+}
+.symbol{
+    background-color: var(--Orange);
+    border-radius: 30px;
+    padding: 19px 23px;
 }
 
 
@@ -227,6 +302,41 @@ body{
         width: 131px;
         font-size: 1rem;
     }
+    /* Curriculum */
+    .curriculum{
+        padding-top: 40px;
+        padding-bottom: 20px;
+        background-image: url(../Images/bg.png);
+    }
+    .curriculum-title{
+        /* margin-top: 60px; */
+        margin-bottom: 20px;
+        font-size: 1.75rem;
+    }
+    .card-container{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 13px;
+        margin: 0 16px;
+    }
+    .edu-card{
+        border-radius: 18.864px;
+        padding: 36px 28px;
+        height: auto;
+    }
+    .card-title{
+        font-size: 1rem;
+        margin: 22px 0;
+    }
+    .card-txt{
+        font-size: 0.8rem;
+        margin: 22px 0;
+    }
+    .card-btn{
+        font-size: 0.9rem;
+    }
+    .direction{
+        display: none;
+    }
 }
 
 /* Responsive for Medium screens */
@@ -268,5 +378,40 @@ body{
     .banner-btn{
         width: 150px;
         font-size: 1.2rem;
+    }
+    /* Curriculum */
+    .curriculum{
+        padding-top: 40px;
+        padding-bottom: 20px;
+        background-image: url(../Images/bg.png);
+    }
+    .curriculum-title{
+        /* margin-top: 60px; */
+        margin-bottom: 20px;
+        font-size: 2rem;
+    }
+    .card-container{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 13px;
+        margin: 0 16px;
+    }
+    .edu-card{
+        border-radius: 18.864px;
+        padding: 36px 24px;
+        height: auto;
+    }
+    .card-title{
+        font-size: 1.1rem;
+        margin: 22px 0;
+    }
+    .card-txt{
+        font-size: 0.9rem;
+        margin: 22px 0;
+    }
+    .card-btn{
+        font-size: 1rem;
+    }
+    .direction{
+        display: none;
     }
 }
