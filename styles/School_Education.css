@@ -415,6 +415,30 @@ body{
     .direction{
         display: none;
     }
+    /* Stories */
+    .stories-title{
+        font-size: 1.75rem;
+        margin-bottom: 20px;
+    }
+    .stories-card-container{
+        margin-top: 20px;
+        padding: 0 15px;
+    }
+    .big-card{
+        display: none;
+    }
+    .small-card-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .small-card-desc{
+        padding: 22px 22px 17px 22px;
+    }
+    .stories-btn{
+        margin-top: 20px;
+        width: 144px;
+        font-size: 1rem;
+        padding: 3px 10px;
+    }
 }
 
 /* Responsive for Medium screens */
@@ -490,6 +514,28 @@ body{
         font-size: 1rem;
     }
     .direction{
-        display: none;
+        margin-top: 20px;
+    }
+    /* Stories */
+    .stories-title{
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+    .stories-card-container{
+        margin-top: 20px;
+        padding: 0 15px;
+        gap: 20px;
+    }
+    .small-card-container{
+        gap: 15px;
+    }
+    .small-card-desc{
+        padding: 22px 22px 17px 22px;
+    }
+    .stories-btn{
+        margin-top: 20px;
+        width: 144px;
+        font-size: 1rem;
+        padding: 7px 10px;
     }
 }
