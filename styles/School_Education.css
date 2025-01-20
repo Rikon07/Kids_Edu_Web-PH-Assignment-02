@@ -36,7 +36,7 @@ body{
     color: #000;
     text-align: center;
     font-family: Quicksand;
-    font-size: 46px;
+    font-size: 2.9rem;
     font-style: normal;
     font-weight: 700;
     line-height: 57.5px; /* 125% */
@@ -131,6 +131,60 @@ body{
 .banner-image{
     max-width: 100%;
 }
+
+/* Curriculum Styles */
+.curriculum-title{
+    margin-top: 60px;
+    margin-bottom: 80px;
+}
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1160px;
+    margin: 0 auto;
+}
+.edu-card{
+    border-radius: 18.864px;
+    border: 0.943px solid #DEF5FF;
+    background: linear-gradient(180deg, #DEF5FF 0%, rgba(255, 255, 255, 0.00) 40%), #FFF;
+    box-shadow: 0px 0px 28.296px 0.943px rgba(0, 0, 0, 0.05) inset;
+    padding: 40px;
+    justify-items: center;
+    height: 476px;
+    /* max-width: 367px; */
+}
+.card-title{
+    color: #202020;
+    text-align: center;
+    font-family: Quicksand;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 30.654px; /* 125% */
+    margin: 32px 0;
+}
+.card-txt{
+    color: #808080;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28.296px; /* 187.5% */
+    margin: 32px 0;
+}
+.card-btn{
+    color: #64C8FF;
+    text-align: center;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28.296px; /* 187.5% */
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+
 
 /* Responsive for Smaller screens */
 @media screen and (max-width: 576px){
