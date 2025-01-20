@@ -19,6 +19,28 @@ body{
     margin: 0px auto;
 }
 
+/* Common Styles */
+.btn{
+    color: #FFF;
+    width: 196px;
+    border-radius: 12px;
+    border: none;
+    padding: 10px;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px; /* 150% */
+    cursor: pointer;
+}
+.mid-titles{
+    color: #000;
+    text-align: center;
+    font-family: Quicksand;
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 57.5px; /* 125% */
+}
 .flex{
     display: flex;
 }
@@ -68,17 +90,46 @@ body{
     color: var(--Purple);
 }
 .Nav-btn{
-    color: #FFF;
-    width: 196px;
-    border-radius: 12px;
-    background: var(--Orange, #FEA301);
-    border: none;
-    padding: 10px;
-    font-size: 1.25rem;
+    background: var(--Orange);
+    /* transition: background-color 1s; */
+}
+.Nav-btn:hover {
+    background: linear-gradient(90deg, var(--Purple), var(--Paste-green));
+}
+
+/* Banner Styles */
+.banner{
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+.banner-description,
+.banner-txt{
+    max-width: 640px;
+}
+.banner-title{
+    color: var(--Black);
+    font-size: 3.5rem;
     font-style: normal;
-    font-weight: 600;
-    line-height: 30px; /* 150% */
-    cursor: pointer;
+    font-weight: 700;
+    line-height: 61px; /* 108.929% */
+}
+.banner-title span:nth-of-type(1) {
+    color: #FEA301;
+}
+.banner-title span:nth-of-type(2) {
+    color: #01ACFD;
+}
+.banner-btn{
+    background: var(--Black);
+}
+.banner-txt{
+    color: var(--Black, #111);
+    font-size: 1.5rem;
+    margin: 24px 0;
+}
+.banner-image{
+    max-width: 100%;
 }
 
 /* Responsive for Smaller screens */
@@ -97,6 +148,31 @@ body{
     .Menu{
         display: inline;
     }
+    /* Banner */
+    .banner{
+        flex-direction: column-reverse;
+        padding: 0px 10px;
+        gap: 20px;
+    }
+    .banner-title{
+        font-size: 2rem;
+        line-height: normal;
+    }
+    .banner-txt{
+        font-size: 0.9rem;
+        margin: 18px 0;
+        max-width: 100%;
+    }
+    .banner-description{
+        justify-items: center;
+    }
+    .banner-title, .banner-txt{
+        text-align: center;
+    }
+    .banner-btn{
+        width: 131px;
+        font-size: 1rem;
+    }
 }
 
 /* Responsive for Medium screens */
@@ -113,5 +189,30 @@ body{
     }
     .Menu{
         display: inline;
+    }
+    /* Banner */
+    .banner{
+        flex-direction: column-reverse;
+        padding: 0px 10px;
+        gap: 32px;
+    }
+    .banner-title{
+        font-size: 3rem;
+        line-height: normal;
+    }
+    .banner-txt{
+        font-size: 1rem;
+        margin: 20px 0;
+        max-width: 100%;
+    }
+    .banner-description{
+        justify-items: center;
+    }
+    .banner-title, .banner-txt{
+        text-align: center;
+    }
+    .banner-btn{
+        width: 150px;
+        font-size: 1.2rem;
     }
 }
