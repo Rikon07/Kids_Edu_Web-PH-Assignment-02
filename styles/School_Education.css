@@ -190,7 +190,8 @@ body{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
-    max-width: 1160px;
+    /* max-width: 1160px; */
+    padding: 0px 10px;
     margin: 0 auto;
 }
 .edu-card{
@@ -387,6 +388,7 @@ footer{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
+    gap: 16px;
 }
 .foot-title{
     display: flex;
