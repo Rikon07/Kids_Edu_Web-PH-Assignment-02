@@ -361,8 +361,8 @@ header{
     padding: 15px 19px 15px 19px;
     /* margin: -20px 0 0 57px; */
     position: absolute;
-    top: 314px; /* Adjust top position as needed */
-    left: 57px;
+    top: 92%;
+    left: 10%;
 }
 
 .small-card-container{
@@ -397,17 +397,17 @@ header{
     padding: 9px 18px 9px 18px;
     position: absolute;
     border-radius: 47px;
-    top: 157px; /* Adjust top position as needed */
-    left: 38px;
+    top: 87%;
+    left: 10%;
 }
 .small-date1{
     background: #95B226;
 }
 .small-date2{
-    background: #95B226;
+    background: var(--Purple);
 }
 .small-date3{
-    background: #95B226;
+    background: var(--Purple);
 }
 .small-date4{
     background: #95B226;
@@ -599,6 +599,13 @@ footer{
     }
     .small-card-desc{
         padding: 22px 22px 17px 22px;
+    }
+    .small-card-date{
+        font-size: 0.6rem;
+        padding: 7px 14px 7px 14px;
+        top: 85%;
+        left: 10%;
+        /* display: none; */
     }
     .stories-btn{
         margin-top: 20px;
