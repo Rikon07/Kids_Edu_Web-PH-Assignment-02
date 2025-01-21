@@ -22,7 +22,7 @@ body{
 }
 header,
 main {
-    max-width: 1440px;
+    /* max-width: 1440px; */
     /* padding-left: 10px;
     padding-right: 10px; */
     margin: 0px auto;
@@ -60,6 +60,9 @@ header{
 .flex{
     display: flex;
 }
+.no{
+    display: none;
+}
 
 /* Navbar */
 .Navbar{
@@ -67,6 +70,7 @@ header{
     justify-content: space-between;
     align-items: center;
     margin: 20px auto;
+    max-width: 1160px;
 }
 .left-nav{
     display: flex;
@@ -124,6 +128,8 @@ header{
 
 /* Banner Styles */
 .banner{
+    max-width: 1160px;
+    margin: 0px auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -185,6 +191,8 @@ header{
 
 /* Curriculum Styles */
 .curriculum{
+    max-width: 1160px;
+    margin: 0px auto;
     padding-top: 60px;
     padding-bottom: 80px;
     background-image: url(../Images/bg.png);
@@ -337,6 +345,26 @@ header{
     line-height: 27px; /* 187.5% */
     max-width: 433px;
 }
+.big-relation,
+.small-relation{
+    position: relative;
+}
+.card-date{
+    color: #FFF;
+    font-family: Raleway;
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    border-radius: 47px;
+    background: #3CD8E8;
+    display: inline-block;
+    padding: 15px 19px 15px 19px;
+    /* margin: -20px 0 0 57px; */
+    position: absolute;
+    top: 314px; /* Adjust top position as needed */
+    left: 57px;
+}
+
 .small-card-container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -358,6 +386,31 @@ header{
     font-size: 1rem;
     font-weight: 700;
     line-height: 28px;
+}
+.small-card-date{
+    color: #FFF;
+    font-family: Raleway;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    padding: 9px 18px 9px 18px;
+    position: absolute;
+    border-radius: 47px;
+    top: 157px; /* Adjust top position as needed */
+    left: 38px;
+}
+.small-date1{
+    background: #95B226;
+}
+.small-date2{
+    background: #95B226;
+}
+.small-date3{
+    background: #95B226;
+}
+.small-date4{
+    background: #95B226;
 }
 .stories-btn{
     background-color: var(--Black);
@@ -508,7 +561,7 @@ footer{
     .card-container{
         grid-template-columns: repeat(1, 1fr);
         gap: 13px;
-        margin: 0 16px;
+        margin: 0px 2px;
     }
     .edu-card{
         border-radius: 18.864px;
