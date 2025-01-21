@@ -730,11 +730,21 @@ footer{
         padding: 0 15px;
         gap: 20px;
     }
+    .card-date{
+        padding: 10px 15px 10px 15px;
+    }
     .small-card-container{
         gap: 15px;
     }
     .small-card-desc{
         padding: 22px 22px 17px 22px;
+    }
+    .small-card-date{
+        font-size: 0.6rem;
+        padding: 7px 14px 7px 14px;
+        top: 85%;
+        left: 10%;
+        /* display: none; */
     }
     .stories-btn{
         margin-top: 20px;
