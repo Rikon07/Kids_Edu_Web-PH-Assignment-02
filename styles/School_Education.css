@@ -17,7 +17,9 @@
     --Purple: #5D58EF;
 }
 body{
-    max-width: 1440px;
+    max-width: 1460px;
+    padding-left: 10px;
+    padding-right: 10px;
     margin: 0px auto;
     background: var(--White);
 }
@@ -340,6 +342,60 @@ body{
     margin-top: 80px;
 }
 
+/* Footer */
+footer{
+    background-color: var(--Sky-Blue);
+    padding: 120px 140px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+}
+.foot-title{
+    display: flex;
+}
+.foot-title-txt{
+    color: #FFF;
+    font-size: 2.6rem;
+    max-width: 206px;
+    font-weight: 700;
+    line-height: 39.509px; /* 93.75% */
+}
+.foot-txt{
+    color: #FFF;
+    font-size: 1.25rem;
+    font-weight: 400;
+    max-width: 400px;
+    margin-top: 35px;
+    margin-left: 5px;
+}
+.foot-about{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.foot-about > :nth-child(1) {
+    margin-bottom: 12px;
+}
+.foot-about a{
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+    color: #FFF;
+    transition: all 0.3s ease;
+}
+.foot-about a:hover{
+    color: #F0AA00;
+}
+.foot-title2{
+    color: #FFF;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+.foot-social > .foot-title2{
+    margin-bottom: 32px;
+}
+
 
 /* Responsive for Smaller screens */
 @media screen and (max-width: 576px){
@@ -441,6 +497,36 @@ body{
         font-size: 1rem;
         padding: 3px 10px;
     }
+    /* Footer */
+    footer{
+        padding: 40px 20px;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: left;
+        gap: 32px;
+    }
+    .foot-title-txt{
+        font-size: 2.1rem;
+    }
+    .foot-txt{
+        font-size: 1rem;
+    }
+    .foot-title2{
+        font-size: 1.25rem;
+    }
+    .foot-about{
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+    .foot-about > :nth-child(1) {
+        margin-bottom: 10px;
+    }
+    .foot-about a{
+        font-size: 1rem;
+    }
+    .foot-social > .foot-title2{
+        margin-bottom: 24px;
+    }
 }
 
 /* Responsive for Medium screens */
@@ -539,5 +625,12 @@ body{
         width: 144px;
         font-size: 1rem;
         padding: 7px 10px;
+    }
+    /* Footer */
+    footer{
+        padding: 80px 60px;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: left;
+        gap: 48px;
     }
 }
