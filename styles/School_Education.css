@@ -537,8 +537,8 @@ footer{
     }
     /* Navbar */
     .Navbar{
-        margin: 12px 0px auto;
-        padding: 10px 16px 12px 16px;
+        margin: 0px 0px auto;
+        padding: 12px 16px 12px 16px;
         border: 0.5px solid var(--Orange);
     }
     .nav-title,
