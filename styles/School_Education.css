@@ -396,6 +396,9 @@ header{
 .small-card > .images{
     border-radius: 16px 16px 0px 0px;
 }
+.small-card .images{
+    border-radius: 10px 10px 0px 0px;
+}
 .small-card-desc{
     padding: 38px 38px 28px 38px;
 }
